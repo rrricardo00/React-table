@@ -5,6 +5,14 @@ const Table = () => {
     //variables
     const [dados, setDados] = React.useState(null)
     const [loading, setLoading] = React.useState(null)
+    const [input, setInput] = React.useState({
+        email: '',
+        nome: '',
+        sobrenome: '',
+        grupo: '',
+        telefone: '',
+        horasEstudadas: ''
+    })
 
     //fetch data
     const pegarDados = React.useCallback(async () => {
@@ -12,10 +20,16 @@ const Table = () => {
         const url = await fetch('http://localhost:3000/infos')
         const json = await url.json()
         setDados(json)
-        console.log(dados)
         setLoading(true)
     }, [dados])
 
+
+    //input
+    const handleChange = ({target}) =>{
+        const {id, value} = target
+        setInput({...input, [id]: value})
+        console.log(target)
+    }
 
     //load
     React.useEffect(() => {
@@ -29,12 +43,12 @@ const Table = () => {
            <table>
                <thead>
                 <tr>
-                    <th>Email</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Primary Group</th>
-                    <th>Phone Number</th>
-                    <th>Hours Studied</th>
+                    <th>Email<br/><input type="text" id="email" value={input.email} onChange={handleChange}/></th>
+                    <th>First Name<input type="text" id="nome" value={input.nome} onChange={handleChange}/></th>
+                    <th>Last Name<input type="text" id="sobrenome" value={input.sobrenome} onChange={handleChange}/></th>
+                    <th>Primary Group<input type="text" id="grupo" value={input.grupo} onChange={handleChange}/></th>
+                    <th>Phone Number<input type="text" id="telefone" value={input.telefone} onChange={handleChange}/></th>
+                    <th>Hours Studied<input type="text" id="horasEstudadas" value={input.horasEstudadas} onChange={handleChange}/></th>
                 </tr>
                </thead>
                <tbody>
