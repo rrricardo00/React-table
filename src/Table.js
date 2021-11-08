@@ -31,7 +31,7 @@ const Table = () => {
         console.log(target)
     }
 
-    //load
+    //load fetch
     React.useEffect(() => {
         pegarDados()
     }, [])
