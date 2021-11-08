@@ -1,0 +1,24 @@
+.table-container{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+table{
+    border-spacing: 20px;
+    width: 1000px;
+}
+
+thead{
+    text-align: center;
+}
+
+tbody td{
+    box-shadow: 0 0 5px #222;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even){
+    background: #c7c7c7;
+    padding: 10px;
+}

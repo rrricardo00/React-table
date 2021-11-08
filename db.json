@@ -1,0 +1,44 @@
+{
+    "infos": [
+        {
+            "email": "rrricardo00@yahoo.com.br",
+            "nome": "Ricardo",
+            "sobrenome": "Rosa",
+            "grupo": "Grupo 1",
+            "telefone": "19 98349-5806",
+            "estudadas": 10000
+        },
+        {
+            "email": "stuart@yahoo.com.br",
+            "nome": "Stuart",
+            "sobrenome": "Trauts",
+            "grupo": "Grupo 3",
+            "telefone": "19 9858-9898",
+            "estudadas": 5000
+        },
+        {
+            "email": "Jose@yahoo.com.br",
+            "nome": "Jose",
+            "sobrenome": "Esoj",
+            "grupo": "Grupo 5",
+            "telefone": "19 857-985",
+            "estudadas": 10000
+        },
+        {
+            "email": "Mari@yahoo.com.br",
+            "nome": "Marianne",
+            "sobrenome": "Anne",
+            "grupo": "Grupo 90",
+            "telefone": "19 89894-9589",
+            "estudadas": 100000
+        },
+        {
+            "email": "Mylly@yahoo.com.br",
+            "nome": "Myllon",
+            "sobrenome": "Noll",
+            "grupo": "Grupo 1",
+            "telefone": "+1 555-8974",
+            "estudadas": 70000
+        }
+    ]
+}
