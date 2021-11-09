@@ -18,7 +18,3 @@ tbody td{
     padding: 10px;
 }
 
-tbody tr:nth-child(even){
-    background: #c7c7c7;
-    padding: 10px;
-}
