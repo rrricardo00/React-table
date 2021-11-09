@@ -20,4 +20,4 @@ Obs.:
 
 1 - If server json doens't run, must install "json-server": npm install -g json-server
 
-2 - Was tested on a windos environment
+2 - Was tested on a windows environment
