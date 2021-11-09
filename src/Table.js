@@ -24,8 +24,9 @@ const Table = () => {
         setDados(json)
         setLoading(true)
 
-    }, [dados])
+    }, [])
 
+    
     //input
     const handleChange = ({ target }) => {
         const { id, value } = target
@@ -48,25 +49,28 @@ const Table = () => {
         }
     }
 
+
+
     //load fetch
     React.useEffect(() => {
         pegarDados()
+        
     }, [])
+    
 
     if (loading === false) return <p>Loading Data</p>
     if (dados === null) return null
     return (
-
         <div className="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Email<br /><input data-id="0" type="text" id="email" value={input.email} onChange={handleChange} onKeyUp={handleFilter} /></th>
-                        <th>First Name<input data-id="1" type="text" id="nome" value={input.nome} onChange={handleChange} onKeyUp={handleFilter} /></th>
-                        <th>Last Name<input data-id="2" type="text" id="sobrenome" value={input.sobrenome} onChange={handleChange} onKeyUp={handleFilter} /></th>
-                        <th>Primary Group<input data-id="3" type="text" id="grupo" value={input.grupo} onChange={handleChange} onKeyUp={handleFilter} /></th>
-                        <th>Phone Number<input data-id="4" type="text" id="telefone" value={input.telefone} onChange={handleChange} onKeyUp={handleFilter} /></th>
-                        <th>Hours Studied<input data-id="5" type="text" id="horasEstudadas" value={input.horasEstudadas} onChange={handleChange} onKeyUp={handleFilter} /></th>
+                        <th>Email<br /><input data-id="0" type="text" id="email" value={input.email} onChange={handleChange} onKeyUp={handleFilter} placeholder='Email'/></th>
+                        <th>First Name<input data-id="1" type="text" id="nome" value={input.nome} onChange={handleChange} onKeyUp={handleFilter} placeholder='First Name'/></th>
+                        <th>Last Name<input data-id="2" type="text" id="sobrenome" value={input.sobrenome} onChange={handleChange} onKeyUp={handleFilter} placeholder='Last Name'/></th>
+                        <th>Primary Group<input data-id="3" type="text" id="grupo" value={input.grupo} onChange={handleChange} onKeyUp={handleFilter} placeholder='Group'/></th>
+                        <th>Phone Number<input data-id="4" type="text" id="telefone" value={input.telefone} onChange={handleChange} onKeyUp={handleFilter} placeholder='Phone'/></th>
+                        <th>Hours Studied<input data-id="5" type="text" id="horasEstudadas" value={input.horasEstudadas} onChange={handleChange} onKeyUp={handleFilter} placeholder='Hours Studied'/></th>
                     </tr>
                 </thead>
                 <tbody>

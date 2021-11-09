@@ -18,3 +18,9 @@ tbody td{
     padding: 10px;
 }
 
+input{
+    filter: drop-shadow(0 0 2px #000);
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 15px;
+}
