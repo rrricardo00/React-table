@@ -12,7 +12,7 @@
 
 6 - open another terminal and run 'npm start' (will run server on port 3006)
 
-7 - The browser addres should be: http://localhost:3006/
+7 - The browser address should be: http://localhost:3006/
 
 8 - Enjoy. 
 
