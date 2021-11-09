@@ -37,11 +37,11 @@ const Table = () => {
     const handleFilter = ({ target }) => {
         for (let index = 0; index <= trs.length - 1; index++) {
             tds = trs[index].childNodes[target.dataset.id]
-            if(tds){
+            if (tds) {
                 txtValue = tds.textContent || tds.innerText;
-                if(txtValue.indexOf(target.value) > -1){
+                if (txtValue.indexOf(target.value) > -1) {
                     trs[index].style.display = ""
-                }else{
+                } else {
                     trs[index].style.display = "none"
                 }
             }
@@ -61,12 +61,12 @@ const Table = () => {
             <table>
                 <thead>
                     <tr>
-                        <th>Email<br /><input data-id="0" type="text" id="email" value={input.email} onChange={handleChange} onKeyUp={handleFilter}/></th>
+                        <th>Email<br /><input data-id="0" type="text" id="email" value={input.email} onChange={handleChange} onKeyUp={handleFilter} /></th>
                         <th>First Name<input data-id="1" type="text" id="nome" value={input.nome} onChange={handleChange} onKeyUp={handleFilter} /></th>
-                        <th>Last Name<input data-id="2" type="text" id="sobrenome" value={input.sobrenome} onChange={handleChange} onKeyUp={handleFilter}/></th>
-                        <th>Primary Group<input data-id="3" type="text" id="grupo" value={input.grupo} onChange={handleChange} onKeyUp={handleFilter}/></th>
-                        <th>Phone Number<input data-id="4" type="text" id="telefone" value={input.telefone} onChange={handleChange} onKeyUp={handleFilter}/></th>
-                        <th>Hours Studied<input data-id="5" type="text" id="horasEstudadas" value={input.horasEstudadas} onChange={handleChange} onKeyUp={handleFilter}/></th>
+                        <th>Last Name<input data-id="2" type="text" id="sobrenome" value={input.sobrenome} onChange={handleChange} onKeyUp={handleFilter} /></th>
+                        <th>Primary Group<input data-id="3" type="text" id="grupo" value={input.grupo} onChange={handleChange} onKeyUp={handleFilter} /></th>
+                        <th>Phone Number<input data-id="4" type="text" id="telefone" value={input.telefone} onChange={handleChange} onKeyUp={handleFilter} /></th>
+                        <th>Hours Studied<input data-id="5" type="text" id="horasEstudadas" value={input.horasEstudadas} onChange={handleChange} onKeyUp={handleFilter} /></th>
                     </tr>
                 </thead>
                 <tbody>
